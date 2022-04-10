@@ -40,7 +40,7 @@ export class LoginComponent implements OnInit {
         password
       })
       if(response.status = 200){
-        this.router.navigate(["signup"])
+        this.router.navigate(["home"])
       }else{
 
       }

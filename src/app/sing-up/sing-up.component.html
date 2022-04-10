@@ -1,1 +1,51 @@
-<p>sing-up works!</p>
+<div class="parent-container">
+  <div class="row login-mainContainer">
+    <div class="login-container col-12">
+      <div class="div">
+        <h1>Create new user</h1>
+      </div>
+      <div class="main-container">
+        <form [formGroup]="formGroup" (ngSubmit)="submitSignUp()">
+          <div class="mb-3">
+            <label for="exampleUserName" class="form-label"
+              >User Name </label
+            >
+            <input
+              type="text"
+              name="username"
+              class="form-control"
+              id="exampleUserName"
+              aria-describedby="emailHelp"
+              formControlName="username"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label"
+              >Email </label
+            >
+            <input
+              type="text"
+              name="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              formControlName="email"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label"
+              >Password</label
+            >
+            <input
+              type="password"
+              class="form-control"
+              id="exampleInputPassword1"
+              formControlName="password"
+            />
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
