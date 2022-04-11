@@ -41,11 +41,11 @@ export class LoginComponent implements OnInit {
       })
       if(response.status = 200){
         this.router.navigate(["home"])
-      }else{
-
+        console.log(response.status)
       }
     }catch(error){
       console.error(error)
+      alert("Something went wrong!")
     }
 
 

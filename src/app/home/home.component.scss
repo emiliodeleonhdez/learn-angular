@@ -1,0 +1,89 @@
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+.parent-container{
+  width: 100%;
+  height: 100vh;
+  // border: 5px solid red;
+  display: flex;
+  .side-bar{
+    width: 15%;
+    // border: 5px solid rgb(18, 150, 32);
+    height: 100vh;
+    // background-color: rgb(12, 12, 65);
+
+  }
+  .main-container{
+    width:85%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    // border: 5px solid rgb(246, 255, 0);
+    .tittle-text{
+      text-align: center;
+    }
+
+  }
+  .main-navigation{
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    li{
+      margin: 10px 0;
+    }
+    li:hover{
+      opacity: 0.5;
+      background-color: gray;
+    }
+    a{
+      text-decoration: none;
+      color: white;
+    }
+  }
+
+}
+
+
+
+
+
+// div{
+
+//   color: blue;
+//   background-color: white;
+// }
