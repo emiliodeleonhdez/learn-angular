@@ -8,6 +8,7 @@ import { LoginComponent } from './login/login.component';
 import { SingUpComponent } from './sing-up/sing-up.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
+import { ProductsComponent } from './products/products.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,6 +16,7 @@ import { FooterComponent } from './footer/footer.component';
     SingUpComponent,
     HomeComponent,
     FooterComponent,
+    ProductsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule, FormsModule],
   providers: [],
