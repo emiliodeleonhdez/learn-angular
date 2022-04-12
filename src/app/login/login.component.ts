@@ -42,6 +42,8 @@ export class LoginComponent implements OnInit {
       if(response.status = 200){
         this.router.navigate(["home"])
         console.log(response.status)
+        sessionStorage.setItem("jwt",response.data.jwt)
+
       }
     }catch(error){
       console.error(error)
