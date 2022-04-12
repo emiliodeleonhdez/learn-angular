@@ -1,1 +1,65 @@
-<app-home></app-home>
+<!-- <app-home [titleText]="'Yes is working!'"></app-home> -->
+<div class="parent-container">
+  <div class="row login-mainContainer">
+    <div class="login-container col-12">
+      <div class="main-container">
+        <div class="div">
+          <h3>Add new Product</h3>
+        </div>
+        <form [formGroup]="formGroup" (ngSubmit)="submitNewProduct()">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label"
+              >Product Title</label
+            >
+            <input
+              type="text"
+              name="productTitle"
+              class="form-control"
+              id="productTitle1"
+              aria-describedby="emailHelp"
+              formControlName="productTitle"
+            />
+
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label"
+              >Product Description</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="productTitle1"
+              formControlName="productDescription"
+
+            />
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label"
+              >Product availability</label
+            >
+            <input
+              type="number"
+              class="form-control"
+              id="productAvailability1"
+              formControlName="productAvailability"
+
+            />
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label"
+              >Product Image URL</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="productImgUrl"
+              formControlName="productImageUrl"
+
+            />
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

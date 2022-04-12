@@ -29,10 +29,11 @@
   <div class="main-container">
     <div class="row">
       <div class="col-12">
-        <h1 class="tittle-text">Hello and Welcome!</h1>
+        <h1 class="tittle-text">{{titleText}}</h1>
       </div>
       <div class="description-container text-center col-12">
         Hi, my name is Emilio De Leon and this is my very first project using Angular.
+        <app-text [mainText]="'In here im creating a Reusable component'"></app-text>
       </div>
     </div>
 
